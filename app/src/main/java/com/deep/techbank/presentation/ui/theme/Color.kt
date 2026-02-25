@@ -1,4 +1,4 @@
-package com.deep.techbank.ui.theme
+package com.deep.techbank.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

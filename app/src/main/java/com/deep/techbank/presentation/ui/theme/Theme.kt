@@ -1,4 +1,4 @@
-package com.deep.techbank.ui.theme
+package com.deep.techbank.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

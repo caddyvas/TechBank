@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_nav_graph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.deep.techbank.presentation.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_loginFragment_to_componentSelectionFragment"
+            app:destination="@id/componentSelectionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/componentSelectionFragment"
+        android:name="com.deep.techbank.presentation.ui.login.ComponentSelectionFragment"
+        android:label="ComponentSelectionFragment">
+        <action
+            android:id="@+id/action_componentSelectionFragment_to_accountsFragment"
+            app:destination="@id/accountsFragment" />
+        <action
+            android:id="@+id/action_componentSelectionFragment_to_usersFragment"
+            app:destination="@id/usersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountsFragment"
+        android:name="com.deep.techbank.presentation.ui.accounts.AccountsFragment"
+        android:label="AccountsFragment"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.deep.techbank.presentation.ui.users.UsersFragment"
+        android:label="UsersFragment" />
+
+</navigation>
